@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Venda de produto</title>
+</head>
+<body>
+	<h1>Venda de produto</h1>
+	<form action="./VendaController" method="post">
+		<table>
+			<tr>
+				<td>Nome do Cliente</td>
+				<td><input type="text" name="nomeCliente"/></td>
+			</tr>
+			<tr>
+				<td>Plataforma</td>
+				<td>
+					<select name="plataforma">
+						<option value="xbox">XBox 360</option>
+						<option value="xboxone">XBox One</option>
+						<option value="ps3">Playstation III</option>
+						<option value="ps4">Playstation IV</option>
+						<option value="pc">PC</option>
+						<option value="gameboy">Game Boy</option>
+						<option value="nintendoswitch">Nintendo Switch</option>
+						<option value="nintendowii">Nintendo Wii</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Data</td>
+				<td><input type="text" name="data"/></td>
+			</tr>		
+			<tr>
+				<td>Valor</td>
+				<td><input type="text" name="valor"/></td>
+			</tr>				
+			<tr>
+				<td>Descrição</td>
+				<td>
+					<textarea rows="5" cols="30"  name="descricao">
+					</textarea>
+				</td>
+			</tr>		
+			<tr>
+				<td><input type="submit" value="Adicionar"/></td>
+				<td><input type="submit" value="Pesquisar"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

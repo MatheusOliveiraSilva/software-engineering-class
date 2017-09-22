@@ -1,0 +1,51 @@
+* Instale o maven, acessando o site https://maven.apache.org/
+	- Clique em Download e escolha o link apache-maven-3.5.0-bin.zip
+	- Será feito o download do Maven
+	- Descompacte o Maven para alguma pasta como exemplo C:\Users\<seu nome>\AppData\Local\Maven
+	- Defina a variável de ambiente M2_HOME para o diretorio onde o maven foi descompactado
+
+Passos para criar a conta no Heroku.com
+
+* Acessar o site heroku.com
+* Clicar em Sign Up for Free
+* Preencher os dados
+* Acessar seu endereço de email e confirmar a conta
+
+* Instalar o Heroku Command Line Interface (CLI)
+	- Faça o download no link https://devcenter.heroku.com/articles/getting-started-with-java#set-up
+	
+	- Instale a ferramenta CLI
+		- Next, next, next, ... , Finish
+	
+	- Acesse a ferramenta com o comando (heroku login) no prompt de comandos
+	- Coloque seu usuário e senha
+	
+* Acesse o site : https://devcenter.heroku.com/articles/getting-started-with-java#set-up
+
+* Clique em Instalei o Heroku CLI
+
+* Acesse o diretorio do GIT no seu computador (normalmente c:\Users\<seu nome>\git
+
+* Faça um clone da aplicação com o comando (git clone https://github.com/kissaten/maven-plugin-war-example)
+
+* Acesse o diretorio do maven-plugin-war-example
+
+* Crie a aplicação no Heroku com o comando: (heroku create)
+
+* Importe a aplicação para seu eclipse usando File->Import digite Maven e escolha Existing Maven Projects
+
+* No Root Directory especifique o diretório onde seu projeto Maven foi criado C:\Users\<seu nome>\git
+
+* Assim que terminar a importação, clique no projeto com o botão direito do mouse e escolha Run As->Maven build...
+	- Coloque heroku:deploy-war em Goals e clique em Run
+	
+* Para criar o banco de dados Postgree : execute o comando no prompt de comandos do Windows (heroku addons:create heroku-postgresql)
+	- Se quiser usar o MariaDB pode rodar o comando a seguir (heroku addons:create jawsdb-maria:kitefin) porém será preciso alterar sua conta para fornecer o cartão de crédito
+
+* Configure o pom.xml para adicionar a dependência do Postgree
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.1.1.jre7</version>
+</dependency>
+

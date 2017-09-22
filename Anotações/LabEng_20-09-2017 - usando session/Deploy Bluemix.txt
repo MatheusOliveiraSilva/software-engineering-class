@@ -1,0 +1,32 @@
+* Acessar o site https://www.ibm.com/cloud-computing/bluemix/pt
+
+* Clique em (Comece a utilizar gratuitamente)
+
+* Preencha o formulario
+
+* Aguarde receber o email e Clique no link para confirmar sua conta
+
+* Crie sua organização
+* Crie o espaço de desenvolvimento como (Dev, Prod, QA, etc...)
+
+
+// Instalar o Bluemix no Eclipse
+* Clique em Help -> Eclipse MarketPlace
+* Procure por Bluemix
+* Clique em Install no plugin IBM Eclipse Tools For Bluemix for Mars
+* Clique em Confirm
+* Aceite os termos de instalação do software e clique em Finish
+
+
+
+// Instalar o MySQL
+https://www.freemysqlhosting.net/
+
+* Coloque seu endereço de email (duas vezes)
+* Aguarde o email de configuração e clique no link
+
+* Anote a senha (u*4rw9FqDvS^Gs^C)
+
+* Faça o login e complete o formulário
+
+*Escolha a região que hospedará o database
